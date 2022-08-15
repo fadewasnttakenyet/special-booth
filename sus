@@ -1,0 +1,31 @@
+_G.Enabled = false --True = Enable Loop | False = Disable Loop
+
+while _G.Enabled == true do
+
+local module = require(game.ReplicatedStorage.Remotes)
+local event = module.Event("SetBoothText")
+local WaitTime = 2.1 --Default: 2.1
+
+event:FireServer("웃", "booth")
+task.wait(WaitTime)
+event:FireServer(" 웃", "booth")
+task.wait(WaitTime)
+event:FireServer("  웃", "booth")
+task.wait(WaitTime)
+event:FireServer("   웃", "booth")
+task.wait(WaitTime)
+event:FireServer("   웃    🚗", "booth")
+task.wait(WaitTime)
+event:FireServer("   웃   🚗 ", "booth")
+task.wait(WaitTime)
+event:FireServer("   웃  🚗  ", "booth")
+task.wait(WaitTime)
+event:FireServer("   웃 🚗   ", "booth")
+task.wait(WaitTime)
+event:FireServer("   웃🚗    ", "booth")
+task.wait(WaitTime)
+event:FireServer("   💥     ", "booth")
+task.wait(WaitTime)
+event:FireServer("   💀     ", "booth")
+task.wait(WaitTime)
+end
